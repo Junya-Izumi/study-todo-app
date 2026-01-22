@@ -2,6 +2,9 @@
 ## 概要
 学習用に作りました。<br>
 とてもシンプルなTODOアプリです。
+```bash
+git clone https://github.com/Junya-Izumi/study-todoApp.git
+```
 ## 使った技術
  ### JavaScript
  - 非同期処理
