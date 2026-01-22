@@ -1,0 +1,66 @@
+.task {
+    display: contents;
+}
+
+.taskList section>ul {
+    overflow-y: auto;
+    /* height: 400px; */
+    height: 40vh;
+}
+
+.taskList-completed>li,
+.taskList-incomplete>li {
+    border: 1px solid #000;
+    position: relative;
+}
+
+.task-title,
+.task-detail {
+    display: inline;
+}
+
+.task-title {
+    font-size: 36px;
+}
+
+.task-detail {
+    position: absolute;
+    height: 50px;
+    text-overflow: ellipsis;
+}
+
+.task-createDate {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #fff;
+    padding: 3px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.task-completeDate {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #fff;
+    padding: 3px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.task-completeBtn{
+    position: absolute;
+    right:210px;
+    border: solid 1px #000;
+    bottom: 0px;
+    pointer-events: all;
+}
+.taskList-incomplete .task-completeDate {
+    display: none;
+}
+
+.taskList-completed .task-createDate {
+    display: none;
+}
+

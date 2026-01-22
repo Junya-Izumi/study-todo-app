@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDo application</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/taskList.css">
+  <link rel="stylesheet" href="css/editer.css">
+</head>
+
+<body>
+  <main class="content">
+    <header class="grid-header">
+      <h1>ToDo application</h1>
+    </header>
+    <section class="taskList grid-contents-left">
+      <header>
+        <h2>ToDo list</h2>
+      </header>
+      <section>
+        <header>
+          <h3>incomplete</h3>
+        </header>
+        <ul class="taskList-incomplete">
+          <!-- <li data-taskid="${id}">
+            <article class="task">
+                <h4 class="task-title">${title}</h4>
+                <p class="task-detail">${detail}</p>
+                <button class="task-completeBtn" aria-label="${completedDisplaytext}">
+                    <span>${completedDisplaytext}</span>
+                </button>
+                <time class="task-createDate" datetime="${createDateDisplayText}">
+                作成日時:${createDateDisplayText}
+                </time>
+                <time class="task-completeDate" datetime="${completeDateDisplayText}">
+                完了日時:${completeDateDisplayText}
+                </time>
+            </article>
+        </li> -->
+        </ul>
+      </section>
+      <section>
+        <header>
+          <h3>completed</h3>
+        </header>
+        <ul class="taskList-completed">
+          <!-- <li data-taskid="${id}">
+            <article class="task">
+                <h4 class="task-title">${title}</h4>
+                <p class="task-detail">${detail}</p>
+                <button class="task-completeBtn" aria-label="${completedDisplaytext}">
+                    <span>${completedDisplaytext}</span>
+                </button>
+                <time class="task-createDate" datetime="${createDateDisplayText}">
+                作成日時:${createDateDisplayText}
+                </time>
+                <time class="task-completeDate" datetime="${completeDateDisplayText}">
+                完了日時:${completeDateDisplayText}
+                </time>
+            </article>
+        </li> -->
+        </ul>
+      </section>
+    </section>
+    <section class="editer grid-contents-right">
+      <header>
+        <h2>task edit</h2>
+        <button class="editer-createTask">create new task</button>
+      </header>
+      <div class="editer-content">
+        <input type="text" class="editer-taskTitle" placeholder="task title">
+        <br>
+        <textarea class="editer-taskDetail"></textarea>
+        <div class="editer-menu">
+          <button class="editer-menu_btn_0">delete</button>
+          <button class="editer-menu_btn_1">save</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script type="module" src="js/main.js" defer></script>
+</body>
+
+</html>

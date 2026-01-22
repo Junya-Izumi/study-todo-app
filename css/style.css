@@ -1,0 +1,58 @@
+
+/*
+*初期化
+*/
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    color:#515151;
+    /* border:1px solid #000; */
+}
+
+li {
+    list-style-type: none;
+    height: 50px;
+    overflow: hidden;
+}
+
+/*
+*gridコンテンツ
+*/
+.content {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    --hader-height: 30px;
+    grid-template-rows: var(--hader-height) calc(100vh - var(--hader-height));
+    background-color: rgba(255, 255, 255, 0.88);
+}
+
+.grid-header {
+    grid-area: 1 / 1 / 1 / 9;
+    height: 100%;
+    font-size: 21px;
+    overflow: hidden;
+    white-space: nowrap;
+    /* font-size: 3rem; */
+}
+.grid-header h1{
+    font-size: 20px;
+}
+
+.grid-contents-left {
+    grid-area: 2 / 1 / 2 / 5;
+}
+
+.grid-contents-right {
+    grid-area: 2 / 5 / 2 / 9;
+}
+
+.taskList ul li > * {
+    pointer-events: none;
+}
+
+.taskList-incomplete,.taskList-completed{
+    border: solid 1px #000;
+}

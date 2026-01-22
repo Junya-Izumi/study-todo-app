@@ -1,0 +1,70 @@
+.editer{
+    --side-margin:20px;
+    position: relative;
+}
+.editer header{
+    margin-left: var(--side-margin);
+    margin-right: var(--side-margin);
+}
+.editer-createTask{
+    position:absolute;
+    /* top:10px; */
+    top:0;
+    /* right: 50px; */
+    left: 150px;
+    height: 40px;
+    border: solid 1px #000;
+    border-radius: 10px;
+    padding: 0  10px;
+}
+.editer-content > *{
+    width: calc(100%  - var(--side-margin)  * 2);
+    margin-left:var(--side-margin);
+    margin-right: var(--side-margin);
+    max-height: 600px;
+}
+
+.editer-taskTitle,.editer-taskDetail{
+    border: solid 1px #000;
+    padding-left: 5px;
+    border-radius: 5px;
+}
+
+.editer-taskTitle{
+    margin: 26.8px 20px 10px 20px ;
+    font-size: 20px;
+    height: 50px;
+    padding-left: 5px;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+.editer-taskDetail{
+    height: 400px;
+    resize: vertical;
+    resize: none;
+    padding-top: 5px;    
+    font-size: 17px;
+    box-sizing: border-box;
+    /* min-height: 300px; */
+    /* max-height: 500px; */
+}
+
+.editer-menu{
+    /* border: solid 1px #000; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:5px;
+    box-sizing: content-box;
+    /* padding: 0 2.5px; */
+    height: 40px;
+    width: calc(100% - var(--side-margin) * 2);
+}
+
+.editer-menu_btn_0,
+.editer-menu_btn_1{
+    border: solid 1px #000;
+    user-select: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
