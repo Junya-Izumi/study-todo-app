@@ -3,7 +3,7 @@
 API SQLの学習で作りました。<br>
 とてもシンプルなTODOアプリです。
 ```bash
-git clone https://github.com/Junya-Izumi/study-todoApp.git
+git clone https://github.com/Junya-Izumi/study-todo-app.git
 ```
 ## 使った技術
  ### JavaScript
